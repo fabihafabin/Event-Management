@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Upcoming Events"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#FFC107"/>
+    <ListView
+        android:id="@+id/eventList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Create New"
+            android:backgroundTint="#FF9800"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="History"
+            android:backgroundTint="#FF9800"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Exit"
+            android:backgroundTint="#FF9800"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

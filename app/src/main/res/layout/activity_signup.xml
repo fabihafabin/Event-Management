@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffff00"
+    >
+
+    <TextView
+        android:id="@+id/singup_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Signup"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+
+        />
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        >
+
+        <TableRow
+            android:id="@+id/row_name">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="textPersonName"
+                />
+        </TableRow>
+
+        <TableRow android:id="@+id/row_email">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="textEmailAddress"
+
+                />
+        </TableRow>
+
+        <TableRow android:id="@+id/row_phone">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="phone"
+                />
+        </TableRow>
+
+        <TableRow android:id="@+id/row_userid">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="User ID" />
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="text"
+                />
+        </TableRow>
+
+        <TableRow android:id="@+id/row_password">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Password" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="textPassword"
+                />
+        </TableRow>
+
+        <TableRow android:id="@+id/row_repassword">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Re-enter Password" />
+            <EditText
+                android:id="@+id/repassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="textPassword"
+                />
+        </TableRow>
+
+        <CheckBox
+            android:id="@+id/checkBoxUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember User ID"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember Password"
+            />
+
+        <TableRow>
+            <TextView
+                android:id="@+id/loginMsg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Already have account? "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/login_text_underline"
+                android:textStyle="bold"
+                android:textColor="#87ceeb"
+                android:layout_marginLeft="8dp"
+                />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Clean the SharedPreferences"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:layout_margin="70dp"
+            />
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Exit"
+            android:backgroundTint="#ffff00"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Go"
+            android:backgroundTint="#ffff00"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
